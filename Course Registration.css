@@ -1,0 +1,402 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    scroll-behavior: smooth;
+}
+
+
+:root{
+    --c-dark: #212529;
+    --c-brand: #4e57d4;
+    --c-brand-light: #6970dd;
+    --c-brand-rgb: 78, 87, 212;
+    --c-body: #727272;
+    --box-shadow: 0px 15px 25px rgba(0, 0, 0, 0.08);
+    --transition: all 0.5s ease;
+}
+
+body{
+    line-height: 1.7;
+    color: var(--c-body);
+}
+
+h1,h2,h3,h4,h5,h6
+.h1, .h2, .h3, .h4, .h5, .h6{
+    font-weight: 600;
+    color: white;
+}
+
+a{
+    text-decoration: none;
+    color: var(--c-brand);
+    transition: var(--transition);
+}
+
+a:hover{
+    color: var(--c-brand-light);
+}
+
+.img{
+    max-width: 100%;
+    height: auto;
+}
+
+.section-padding{
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.navbar{
+    box-shadow: var(--box-shadow);
+}
+.navbar-nav .nav-link{
+    font-weight: 500;
+    color: var(--c-dark);
+}
+.navbar-nav .nav-link.active{
+    color: var(--c-brand);
+}
+
+
+.btn{
+    font-weight: 600;
+    font-size: 14px;
+    text-transform: uppercase;
+    border-radius: 0;
+    padding: 10px 24px;
+}
+.btn-brand{
+    background-color: var(--c-brand);
+    color: white;
+}
+.btn-brand:hover{
+    background-color: var(--c-brand-light);
+    border-color: var(--c-brand-light);
+    color: white;
+}
+
+
+#hero{
+    background: linear-gradient(#00000078, #00000069), url(alexandros-giannakakis-OuWiyIgqZgw-unsplash.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+
+.section-title{
+    /* margin-bottom: 60px; */
+    height: 4px;
+    background-color: var(--c-brand);
+    margin: 16px auto 24px auto;
+}
+
+.section-title p{
+    max-width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.icon{
+    width: 60px;
+    height: 60px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(var(--c-brand-rgb), 0.1);
+    color: var(--c-brand);
+    font-size: 30px;
+}
+@keyframes code{
+
+}
+
+@media (max-width: 765px){
+    #book{
+        padding: 0;
+    }
+    .main-text h1{
+        padding: 20px;
+    }
+}
+
+
+
+
+
+
+
+
+#book{
+    background: rgb(236, 236, 240);
+    padding: 50px;
+}
+.main-text h1{
+    text-align: center;
+    text-shadow: 0px 1px 1px black;
+    font-weight: 600;
+}
+.main-text h1 span{
+    color: #6970dd;
+}
+#book .card{
+    border-radius: 10px;
+    box-shadow: 0px 5px -6px black;
+}
+#book .row{
+    margin-top: 30px;
+}
+.book form input{
+    padding: 10px;
+    color: black;
+    border: none;
+    outline: none;
+    font-size: 15px;
+    border-radius: 10px;
+    box-shadow: 0px 5px 5px -6px black;
+}
+#book form textarea{
+    border: none;
+    border-radius: 10px;
+    resize: none;
+    box-shadow: 0px 5px 5px -6px black;
+    height: 200px;
+}
+#book .submit{
+    width: 160px;
+    font-size: 16px;
+    font-weight: 550;
+    background: #6970dd;
+    color: white;
+    margin-top: 10px;
+    transition: 0.5s;
+}
+#book .submit:hover{
+    width: 170px;
+}
+
+
+
+.main-text h1{
+    text-align: center;
+    margin-top: 30px;
+    font-weight: 600;
+    text-shadow: 0px 1px 1px black;
+}
+.main-text h1 span{
+    color: #6970dd;
+}
+.packages .card{
+    border-radius: 5px;
+    border: none;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+}
+.packages .card img{
+    border-radius: 5px;
+}
+.packages .card-body{
+    background: transparent;
+}
+.packages .card .card-body h3{
+    font-size: 25px;
+    font-weight: 600;
+    color: black;
+}
+.packages .card .card-body{
+    font-size: 15px;
+}
+.bi-star-fill{
+    color: gold;
+}
+.bi-star-half{
+    color: gold;
+}
+.bi-star{
+    color: gold;
+}
+.star i{
+    font-size: 15px;
+}
+.packages .card .card-body h6{
+    font-size: 20px;
+}
+.packages .card .card-body a{
+    padding: 10px;
+    text-decoration: none;
+    background: #6970dd;
+    color: white;
+    border-radius: 5px;
+}
+
+
+
+.services{
+    background: rgb(236, 236, 240);
+    margin-top: 50px;
+}
+.services .card{
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+    border: none;
+    cursor: pointer;
+}
+.services .card i{
+    font-size: 80px;
+    text-align: center;
+    color: #6970dd;
+    margin-top: 20px;
+}
+.services .card .card-body h3{
+    font-weight: 600;
+}
+.services .card .card-body h3{
+    color: black;
+}
+.services .card .card-body{
+    text-align: center;
+}
+
+
+
+.section.gallery{
+    margin-top: 50px;
+}
+.gallery .card{
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+    cursor: pointer;
+}
+.gallery .card img{
+    border-radius: 10px;
+    transition: 0.5s;
+}
+.gallery .card img:hover{
+    transform: scale(1.1);
+}
+
+
+
+
+
+#about{
+    margin-top: 50px;
+    background: rgb(236, 236, 240);
+    padding: 25px;
+}
+#about .card{
+    border-radius: 10px;
+}
+#about .card img{
+    border-radius: 10px;
+}
+#about h2{
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+#about p{
+    font-weight: 500;
+}
+#about-btn{
+    width: 150px;
+    height: 35px;
+    border: none;
+    border-radius: 5px;
+    background: #6970dd;
+    color: white;
+    letter-spacing: 2px;
+    font-weight: 550;
+    transition: 0.5s ease;
+    cursor: pointer;
+}
+#about-btn:hover{
+    width: 170px;
+}
+@media (max-width: 765px){
+    #about{
+        padding: 0;
+    }
+}
+
+
+
+#footer{
+    margin-top: 150px;
+    width: 100%;
+    text-align: center;
+    background: rgb(236, 236, 240);
+}
+#footer h1{
+    font-weight: 600;
+    padding-top: 30px;
+    text-shadow: 0px 0px 1px black;
+}
+#footer h1 span{
+    color: #6970dd;
+}
+.socials i{
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 20px;
+    background: black;
+    color: white;
+    margin-left: 10px;
+    margin-bottom: 10px;
+    transition: 0.5s ease;
+    cursor: pointer;
+}
+.socials i:hover{
+    background: #6970dd;
+}
+
+
+
+
+.image-zoom{
+    position: relative;
+    overflow: hidden;
+}
+.image-zoom-wrapper{
+    overflow: hidden;
+    position: relative;
+}
+.image-zoom-wrapper img{
+    transition: var(--transition);
+}
+.image-zoom:hover .image-zoom-wrapper img{
+    transform: scale(1.1);
+}
+
+
+
+.portfolio-item .iconbox{
+    background-color: var(--c-brand);
+    color: white;
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+}
+.portfolio-item:hover .iconbox{
+    opacity: 1;
+    top: 50%;
+}
+
+.review small{
+    font-weight: 600;
+    text-transform: uppercase;
+    color: var(--c-brand);
+}
+.review-head{
+    position: relative;
+}
+.review-head::after{
+    content: '';
+    width: 28px;
+    height: 28px;
+    position: absolute;
+    bottom: -14px;
+    background-color: white;
+    transform: rotate(45deg);
+}
