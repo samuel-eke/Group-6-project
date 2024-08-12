@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Course Registration Form</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        .container {
+            width: 50%;
+            margin: 0 auto;
+            background-color: #fff;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            margin-top: 50px;
+            border-radius: 8px;
+        }
+        h1 {
+            text-align: center;
+            color: #333;
+        }
+        form {
+            display: flex;
+            flex-direction: column;
+        }
+        label {
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+        input, select, textarea {
+            margin-bottom: 20px;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        button {
+            padding: 10px 20px;
+            border: none;
+            border-radius: 4px;
+            background-color: #28a745;
+            color: white;
+            font-size: 16px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #218838;
+        }
+        .dob-select {
+            display: flex;
+            justify-content: space-between;
+        }
+        .dob-select select {
+            width: 32%;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Course Registration Form</h1>
+        <form action="submit_registration.php" method="POST">
+            <label for="first-name">First Name:</label>
+            <input type="text" id="first-name" name="first-name" required>
+            
+            <label for="last-name">Last Name:</label>
+            <input type="text" id="last-name" name="last-name" required>
+            
+            <label for="dob">Date of Birth:</label>
+            <div class="dob-select">
+                <select id="dob-day" name="dob-day" required>
+                    <option value="" disabled selected>Day</option>
+                   
+                </select>
+                <select id="dob-month" name="dob-month" required>
+                    <option value="" disabled selected>Month</option>
+                   
+                </select>
+                <select id="dob-year" name="dob-year" required>
+                   <option value=""  disabled selected>Year</option>
+                    </script>
+                </select>
+            </div>
+            
+            <label for="gender">Gender:</label>
+            <select id="gender" name="gender" required>
+                <option value="" disabled selected>Select Gender</option>
+                <option value="male">Male</option>
+                <option value="female">Female</option>
+                <option value="other">Other</option>
+                <option value="prefer-not-to-say">Prefer not to say</option>
+            </select>
+            
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            
+            <label for="phone">Phone Number:</label>
+            <input type="tel" id="phone" name="phone" required>
+            
+            <label for="course">Course:</label>
+            <select id="course" name="course" required>
+                <option value="web-development">Web Development</option>
+                <option value="data-science">Data Science</option>
+                <option value="machine-learning">Machine Learning</option>
+                <option value="cyber-security">Cyber Security</option>
+            </select>
+            
+            <label for="comments">Additional Comments:</label>
+            <textarea id="comments" name="comments" rows="4"></textarea>
+            
+            <button type="submit">Register</button>
+        </form>
+    </div>
+</body>
+</html>
+
